@@ -1,1 +1,135 @@
+/* Fuente base */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #222;
+}
+
+/* Encabezado Hero */
+.hero {
+  background-image: url('assets/bg.jpg'); /* Puedes cambiar la imagen de fondo aquí */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Oscurece fondo para contraste */
+  z-index: 1;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.logo {
+  max-height: 80px;
+  margin-bottom: 1rem;
+}
+
+/* Títulos */
+h1, h2, h3 {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e1e1e;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0e539b;
+}
+
+/* Secciones */
+.section {
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+.section.light {
+  background-color: #f0f4f8;
+}
+
+.section p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* Servicios */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.service-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card ul {
+  padding-left: 1.2rem;
+  list-style-type: disc;
+}
+
+.service-card li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* Sectores */
+.sector-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem 0;
+  font-weight: 500;
+}
+
+.sector-list li {
+  background-color: #0e539b;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+}
+
+/* Footer */
+footer {
+  background-color: #1e1e1e;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+}
 
